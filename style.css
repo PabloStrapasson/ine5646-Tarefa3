@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+#banner {
+    height: 200px;
+    padding: 20px;
+    background-image: url("./images/banner/cinema.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#banner h1{
+    color:white;
+    font-family: 'Raleway';
+    font-style: oblique;
+    position: relative;
+    text-align: center;
+    top: 50px;
+}
+
+.autor {
+    font-family: Oswald;
+    position: relative;
+    width: 120px;
+    top: -60px;
+    left: calc(50% - 70px);
+}
+
+.autor img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.nome-autor {
+    font-family: Oswald;
+    font-size: 18pt;
+    font-style: oblique;
+    color: #292424;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+#posts {
+    width: 66.76%;  
+    position: relative;
+    left: calc(50% - 33.38%);
+    
+}
+
+.article {
+    font-family: Oswald; 
+    color: #292424;
+    padding: 25px 15px 10px 15px;
+    margin: 20px 10px;
+    border:#F6F6F6;
+    border-bottom-color: #ffffff;
+    border-style: ridge;
+    border-radius: 2rem;
+    border-width: 3px;
+}
+
+.article h1{
+    font-size: 24pt;
+    padding-bottom: 3.5%;
+}
+
+.article h2 {
+    font-size: 16pt;
+    font-style: oblique;
+    padding-bottom: 2.5%;
+}
+
+.article p{
+    font-family: 'Open Sans';
+    text-align: justify;
+}
+
+.article img {
+    width: 100%;
+    height: 500px;
+    border-radius: 1.2rem;
+    margin-top: 3%;
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    justify-content: left;
+    margin: 15px 5px; 
+}
+
+.feedback div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.feedback img{
+    margin: 0 3px;
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.feedback .pressed{
+    opacity: 1;
+}
+
+.feedback p{
+    margin-right: 200px;
+    color: darkslategray;
+    margin: 0;
+    padding: 0;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 400px){
+
+    #posts {
+        width: 100%;
+        left: 0;
+    }
+
+    #banner h1{ 
+        top:0;
+    }
+
+    .autor {
+        width: 100px;
+        top: -50px;
+        left: calc(50% - 50px);
+    }
+
+    .autor img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .nome-autor {
+        font-size: 12pt;
+    }
+
+    .article img {
+        height: 300px;
+    }
+    
+    .feedback div{
+        width: 40%;
+        height: 30px;
+    }
+    
+    .feedback img{
+        width: 42px;
+        height: 30px;
+    }
+}
+
+@media(min-width: 401px) and (max-width: 700px){
+
+    #posts {
+        width: 100%;
+        left:0;
+    }
+
+    #banner h1{ 
+        top:0;
+    }
+
+    .article img {
+        height: 400px;
+    }
+    
+    .feedback div{
+        width: 40%;
+        height: 30px;
+    }
+    
+    .feedback img{
+        width: 42px;
+        height: 30px;
+    }
+}
